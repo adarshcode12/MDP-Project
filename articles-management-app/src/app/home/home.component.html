@@ -19,6 +19,11 @@
           <div class="col-lg-6 text-center mt-5">
              <h1 class="display-2 font-weight-bold text-white mt-5">welcome to my website
                 <span >Read and Write your favourite articles</span>
+                <li class="nav-item d-none d-lg-block ml-lg-4" *appShowAuthed="true">
+                  <a [routerLink]="['/editor']" routerLinkActive="active"  class="btn btn-neutral btn-icon" title="Write Article">
+                    <span class="btn-inner--icon"><i class="fa fa-edit"></i>   Write Article</span>
+                  </a>
+                </li>
             </h1>
           </div>
         </div>

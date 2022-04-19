@@ -53,6 +53,12 @@ export class HeaderComponent implements OnInit {
       return false;
     }
   }
+
+  logout() {
+    this.userService.purgeAuth();
+    this.router.navigateByUrl('/');
+  }
+  
   isDocumentation() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
     if (titlee === '#/documentation') {
