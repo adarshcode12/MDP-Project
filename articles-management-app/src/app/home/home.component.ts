@@ -29,11 +29,9 @@ export class HomeComponent implements OnInit {
         this.isAuthenticated = authenticated;
 
         // set the article list accordingly
-        if (authenticated) {
-          this.setListTo('feed');
-        } else {
+        
           this.setListTo('all');
-        }
+        
       }
     );
 
