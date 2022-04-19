@@ -40,11 +40,7 @@
                     (toggle)="onToggleFollowing($event)">
                   </app-follow-button>
         
-                  <app-favorite-button
-                    [article]="article"
-                    (toggle)="onToggleFavorite($event)">
-                    {{ article.favorited ? 'Unfavorite' : 'Favorite' }} Article <span class="counter">({{ article.favoritesCount }})</span>
-                  </app-favorite-button>
+                  
                 </span>
         
               </app-article-meta>
@@ -101,12 +97,6 @@
               [profile]="article.author"
               (toggle)="onToggleFollowing($event)">
             </app-follow-button>
-  
-            <app-favorite-button
-              [article]="article"
-              (toggle)="onToggleFavorite($event)">
-              {{ article.favorited ? 'Unfavorite' : 'Favorite' }}<span class="counter">({{ article.favoritesCount }})</span>
-            </app-favorite-button>
           </span>
   
         </app-article-meta>
